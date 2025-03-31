@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eric's Projects</title>
+</head>
+<body>
+    
+    <div id="header-placeholder"></div>
+
+    <div class="content">
+        <h1>Welcome to Eric's Projects</h1>
+        <p>Hello! I'm Eric, a passionate developer working on various projects such as a gravity sim using C++, my custom Warhammer App in Python, 
+            a calculator made with .js and finally an AI model using various techniques! Above are some of my works!</p>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load the header file into the placeholder
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

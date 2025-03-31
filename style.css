@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 70px; /* Adjust the height as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    
+    align-items: center;
+    color: white;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.content ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Calculator Styling DO NOT TOUCH */
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #ff9000, #000000, #696969);
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 5px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: #000000;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: #000000;
+    font-size: 2.5em;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 325px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: #000000;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: white;
+    background: #ff9000
+}
+
+.calc-button:hover{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: white;
+    background: #ff9000
+}
+
+.calc-button:last-child:hover{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4 30px rgba(35, 35, 35, 0.1);
+    color: #ff9000;
+    background: black;
+}
+
+.calc-button:active{
+    background-color: #000000;
+}
+
+.calc-button:last-child:active{
+    background-color: white;
+}
+
+.double{
+    flex-basis: 45%;
+}

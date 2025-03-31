@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eric's Projects</title>
+</head>
+<body>
+    
+    <div id="header-placeholder"></div>
+
+    <div class="content">
+        <h1>Warhammer 40k Combat Sim Coming Soon!</h1>
+        <p>WIP! Deep in development this is on its way!</p>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load the header file into the placeholder
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
