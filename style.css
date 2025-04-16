@@ -42,11 +42,14 @@ nav ul li a {
 }
 
 .content {
-    
     align-items: center;
     color: white;
 }
 
+body.resume-page .content {
+    padding-top: 800px;
+    padding-bottom: 200px;
+}
 .content h1 {
     margin-bottom: 20px;
 }
@@ -199,4 +202,34 @@ body{
 
 .double{
     flex-basis: 45%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {   
+    background-color: black;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #ff9000;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
 }

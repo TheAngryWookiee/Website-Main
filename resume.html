@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume - Eric Thompson</title>
+</head>
+<body class="resume-page">
+    <div id="header-placeholder"></div>
+
+    <div class="content">
+        <h1>Resume - Eric Thompson</h1>
+
+        <section class="contact-info">
+            <p><strong>Name:</strong> Eric Thompson</p>
+            <p><strong>Address:</strong> 1148 Belvedere Ave, Oshawa, ON L1H 1T1</p>
+            <p><strong>Phone:</strong> 289-979-7952</p>
+            <p><strong>Email:</strong> <a href="mailto:thethompson@live.ca">thethompson@live.ca</a></p>
+        </section>
+
+        <section class="qualifications">
+            <h2>Highlight of Qualifications</h2>
+            <ul>
+                <li>8+ years of retail experience in sales, computer analytics, information technology and data mining.</li>
+                <li>Extensive knowledge of Python, C#, SQL, Java, and C++.</li>
+                <li>Excellent communication skills and a proven ability to juggle multiple high priority tasks.</li>
+                <li>Detail-oriented, strong organizational skills, with ability to carry out tasks with minimal supervision.</li>
+                <li>Focused on hardware diagnostics, computer networking, & machine learning.</li>
+            </ul>
+        </section>
+
+        <section class="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C#, Java, C++, SQL, HTML, CSS, React.js, JavaScript, TypeScript</li>
+                <li><strong>Data Science & ML:</strong> Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch</li>
+                <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+                <li><strong>Tools:</strong> Tableau, Power BI, Git, Jupyter Notebook, Docker</li>
+                <li><strong>Cloud & Deployment:</strong> AWS, Flask, FastAPI, Heroku</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Computer Programming</strong> – Durham College, Oshawa, ON (Sept 2022 – June 2024)</p>
+            <ul>
+                <li>Relevant Courses: Object-Oriented Programming, Computer Systems-Hardware, Database Development, Software Testing & Automation, Systems Development</li>
+            </ul>
+            <p><strong>Artificial Intelligence Analysis, Design and Implementation</strong> – Graduate Certificate, Durham College, Oshawa ON (Sept 2024 – Present)</p>
+            <ul>
+                <li>Relevant Courses: AI Algorithms I, AI in Enterprise Systems, Visualization and Data Storytelling, Applied Mathematics for AI Systems</li>
+            </ul>
+        </section>
+
+        <section class="professional-experience">
+            <h2>Professional Experience</h2>
+            <p><strong>Administration Assistant</strong> – Durham College, Oshawa, ON (May 2023 – Present)</p>
+            <ul>
+                <li>Monitor the main Faculty of Business and IT email inbox and assist with inquiries received through the main phone line.</li>
+                <li>Organize and maintain student academic forms while overseeing the proper disposal of highly confidential/sensitive records in accordance with guidelines.</li>
+                <li>Acted as liaison between Academic Advisors, Executive Deans, Faculty, and other stakeholders as directed.</li>
+            </ul>
+
+            <p><strong>Geek Squad Certified In-Store Service Agent</strong> – Best Buy Canada LTD, Oshawa, ON (Nov 2018 – Sept 2023)</p>
+            <ul>
+                <li>Resolved unsatisfactory customer issues and complaints; investigated root cause; identified and implemented action plans to prevent recurrences.</li>
+                <li>Maintained excellent customer service skills to communicate client needs effectively and provide quality service to enhance customer satisfaction.</li>
+                <li>Technical work on computers and devices included hardware repairs, installation, and OS repairs on both MacOS and Windows 10/11.</li>
+            </ul>
+
+            <p><strong>Senior Advisor</strong> – Best Buy Canada LTD, Oshawa, ON (Mar 2015 – Nov 2018)</p>
+            <ul>
+                <li>Developed strategic goals and objectives for the team.</li>
+                <li>Assisted in running development training to aid associates in selling Geek Squad products and services.</li>
+                <li>Resolved customer issues and managed the sales floor as Sales Floor Lead and Manager on Duty.</li>
+            </ul>
+        </section>
+
+        <section class="download-section">
+            <h2>Download My Resume</h2>
+            <p><a href="assets/Eric Thompson Resume.pdf" download>Click here to download my resume (PDF)</a></p>
+        </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load the header file into the placeholder
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
